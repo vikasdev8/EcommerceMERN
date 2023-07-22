@@ -1,5 +1,5 @@
 const asyncError = require('../middelware/catchasyncerror')
-const stripe = require('stripe')("sk_test_51KECMZSDQLfWwbBysITJT7RZRiHlD5pM61rXjACV4DwsIQgXy4YrPRnQuEKBHBcofvPHOPlYu08B73iwHzVdODnD00zdzFP9ub");
+const stripe = require('stripe')("stripe_api");
 
 exports.processpayment = asyncError( async(req,res, next)=>{
     console.log(req.body.amount)
